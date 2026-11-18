@@ -2,8 +2,8 @@
 
 > **Projeto:** Market Explorer — investigação autónoma de novos mercados  
 > **Estado:** plano de desenvolvimento, **não** implementação concluída.  
-> **Dossier global:** [Select Markets Group — V1](https://github.com/machinetenisRM/select-markets-platform/blob/main/docs/SELECT_MARKETS_GROUP_V1_GLOBAL.md)  
-> **Conta:** machinetenisRM · **Acesso:** repositório privado · **Idioma:** PT-PT
+> **Dossier global:** [Select Markets Group — V1](https://github.com/selectmarketsgroup/select-markets-platform/blob/main/docs/SELECT_MARKETS_GROUP_V1_GLOBAL.md)  
+> **Conta:** selectmarketsgroup · **Acesso:** repositório privado · **Idioma:** PT-PT
 
 ## 1. Missão deste repositório
 
