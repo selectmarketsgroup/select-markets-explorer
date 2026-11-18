@@ -7,7 +7,7 @@
 ## Documentos
 
 - [**Plano de implementação V1 deste projeto**](PLANO_IMPLEMENTACAO_V1.md)
-- [**Especificação global de negócio e funcionalidades**](https://github.com/machinetenisRM/select-markets-platform/blob/main/docs/SELECT_MARKETS_GROUP_V1_GLOBAL.md)
+- [**Especificação global de negócio e funcionalidades**](https://github.com/selectmarketsgroup/select-markets-platform/blob/main/docs/SELECT_MARKETS_GROUP_V1_GLOBAL.md)
 
 ## Sequência de trabalho
 
