@@ -51,8 +51,22 @@ def submit_hypotheses(dossiers: list[dict], base_url: str, token: str, *,
         # Never promote a niche directly from scholarly topic metadata.
         if dossier.get("status") not in ("research", "test"):
             raise ValueError("Unsafe hypothesis status")
+        payload = {
+            "market": dossier["market"],
+            "title": dossier["title"],
+            "status": dossier["status"],
+            "rationale": dossier["rationale"],
+            "evidence": dossier.get("evidence", []),
+            "research_details": {
+                key: dossier[key] for key in (
+                    "hypothesis_origin", "sample_size", "independent_sources",
+                    "source_limit", "currency", "observed_price_median",
+                    "viability_demonstrated", "limitation", "rejected_sources"
+                ) if key in dossier
+            },
+        }
         request = Request(base_url.rstrip("/") + "/v1/hypotheses",
-            data=json.dumps(dossier).encode(),
+            data=json.dumps(payload).encode(),
             headers={"Authorization": "Bearer " + token,
                      "Content-Type": "application/json", "Accept": "application/json"},
             method="POST")
